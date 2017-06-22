@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 16, 2017 3:01:29 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping auto-import="true">
+    <class name="model.polo.Foods" table="foods" catalog="quan" optimistic-lock="version">
+        <id name="idfood" type="java.lang.Integer">
+            <column name="IDFood" />
+            <generator class="identity" />
+        </id>
+        <property name="foodName" type="string">
+            <column name="FoodName" not-null="true" />
+        </property>
+        <property name="info" type="string">
+            <column name="Info" />
+        </property>
+        <property name="note" type="string">
+            <column name="Note" />
+        </property>
+        <property name="price" type="java.lang.Integer">
+            <column name="Price" />
+        </property>
+        <property name="image" type="string">
+            <column name="Image" length="65535" />
+        </property>
+    </class>
+</hibernate-mapping>

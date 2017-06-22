@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 16, 2017 3:01:29 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.polo.Users" table="users" catalog="quan" optimistic-lock="version">
+        <id name="iduser" type="java.lang.Integer">
+            <column name="IDUser" />
+            <generator class="identity" />
+        </id>
+        <property name="userName" type="string">
+            <column name="UserName" not-null="true" />
+        </property>
+        <property name="userPass" type="string">
+            <column name="UserPass" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

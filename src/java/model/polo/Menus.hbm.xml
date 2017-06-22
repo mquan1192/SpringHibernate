@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 16, 2017 3:01:29 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.polo.Menus" table="menus" catalog="quan" optimistic-lock="version">
+        <id name="idmenu" type="java.lang.Integer">
+            <column name="IDMenu" />
+            <generator class="identity" />
+        </id>
+        <property name="idfood" type="string">
+            <column name="IDFood" not-null="true" />
+        </property>
+        <property name="info" type="string">
+            <column name="Info" />
+        </property>
+        <property name="menuDate" type="date">
+            <column name="MenuDate" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>
